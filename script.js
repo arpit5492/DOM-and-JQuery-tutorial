@@ -1,30 +1,12 @@
-// using innerText property
+const anchor = document.querySelector("a");
+console.log(anchor.getAttribute("href"));
 
-const title = document.querySelector("#page-title");
-// console.log(title.innerText);
-// title.innerText = 'New Title';
+anchor.setAttribute("href", "https://www.amazon.com");
+anchor.innerText = 'Link to Amazon.com';
 
-// using innerHTML property
+const error = document.querySelector("div.error");
+console.log(error);
 
-// const paras = document.querySelector("p");
-// console.log(paras.innerHTML);
+error.setAttribute("class", "success");
 
-// paras.innerHTML += "<h3>Hello world!!</h3>"; // += appends to the original tag
-
-// const paras = document.querySelectorAll("p");
-// // console.log(paras);
-
-// paras.forEach(para => {
-//     para.innerHTML += "<h3>New title</h3>";
-// });
-
-const content = document.querySelector(".content")
-console.log(content);
-
-const people = ['Rajiv', 'Rahul', 'Joseph'];
-people.forEach(person => {
-    content.innerHTML += `<h4>${person}</h4>`;
-});
-
-
-
+error.setAttribute("style", "color: blue;");// We can also set the color of the para element inside div using setAttribute() method
