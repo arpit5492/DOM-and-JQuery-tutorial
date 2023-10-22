@@ -1,8 +1,12 @@
-const error = document.querySelector("p");
-console.log(error);
+const paras = document.querySelectorAll("p");
+// console.log(paras);
 
-console.log(error.classList);
-error.classList.add("error"); // add a class
-error.classList.remove("error"); //remove a class
-
-error.classList.add("success"); // add a class
+paras.forEach(para => {
+    // console.log(para);
+    if(para.textContent.includes("error")){
+        para.classList.add("error");
+    }
+    else if(para.textContent.includes("success")){
+        para.classList.add("success");
+    }
+});
