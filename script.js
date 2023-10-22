@@ -1,17 +1,15 @@
-// Iterating through all the paragraph tags
+// get element by id
 
-const paras = document.querySelectorAll("p");
-// console.log(paras);
+const title = document.getElementById("page-title");
+console.log(title);
 
-// paras.forEach(para => {
-//     console.log(para);
-// });
+// get elements by class
+const errors = document.getElementsByClassName("error");
+console.log(errors);
 
-// Iterating through all the error class
+// get elements by tag name
+const paras = document.getElementsByTagName("p");
+console.log(paras);
 
-const errors = document.querySelectorAll(".error");
-// console.log(errors);
-
-errors.forEach(error => {
-    console.log(error);
-});
+// Now the issue with these getElementByClassName & getElementsByTagName is that we can't use forEach() method with these.
+// So, it's better to use querySelector and querySelectorAll.
