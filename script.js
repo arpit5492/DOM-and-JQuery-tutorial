@@ -1,15 +1,30 @@
-// get element by id
+// using innerText property
 
-const title = document.getElementById("page-title");
-console.log(title);
+const title = document.querySelector("#page-title");
+// console.log(title.innerText);
+// title.innerText = 'New Title';
 
-// get elements by class
-const errors = document.getElementsByClassName("error");
-console.log(errors);
+// using innerHTML property
 
-// get elements by tag name
-const paras = document.getElementsByTagName("p");
-console.log(paras);
+// const paras = document.querySelector("p");
+// console.log(paras.innerHTML);
 
-// Now the issue with these getElementByClassName & getElementsByTagName is that we can't use forEach() method with these.
-// So, it's better to use querySelector and querySelectorAll.
+// paras.innerHTML += "<h3>Hello world!!</h3>"; // += appends to the original tag
+
+// const paras = document.querySelectorAll("p");
+// // console.log(paras);
+
+// paras.forEach(para => {
+//     para.innerHTML += "<h3>New title</h3>";
+// });
+
+const content = document.querySelector(".content")
+console.log(content);
+
+const people = ['Rajiv', 'Rahul', 'Joseph'];
+people.forEach(person => {
+    content.innerHTML += `<h4>${person}</h4>`;
+});
+
+
+
