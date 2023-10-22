@@ -13,3 +13,4 @@ error.setAttribute("style", "color: blue;");// We can also set the color of the 
 
 // But there is a drawback of adding styles using setAtrribute() method.
 // The drawback is that it overwrites the color property and sets a property which we have set using setAtrribute() method
+// We will see that in the next lesson
