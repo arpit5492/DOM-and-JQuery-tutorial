@@ -1,16 +1,11 @@
-const anchor = document.querySelector("a");
-console.log(anchor.getAttribute("href"));
+const header = document.querySelector("h1");
+console.log(header);
 
-anchor.setAttribute("href", "https://www.amazon.com");
-anchor.innerText = 'Link to Amazon.com';
+// header.setAttribute("style", "margin: 50px;"); // Using setAttribute() it overwrites the color property. This is a big drawback of setAttribute()
+// Instead we can use .style property as below:
+console.log(header.style);
 
-const error = document.querySelector("div.error");
-console.log(error);
-
-error.setAttribute("class", "success");
-
-error.setAttribute("style", "color: blue;");// We can also set the color of the para element inside div using setAttribute() method
-
-// But there is a drawback of adding styles using setAtrribute() method.
-// The drawback is that it overwrites the color property and sets a property which we have set using setAtrribute() method
-// We will see that in the next lesson
+header.style.margin = '50px';
+header.style.color = 'blue';
+header.style.margin = ''; // Removes the margin
+header.style.fontSize = '50px';
