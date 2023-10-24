@@ -1,1 +1,0 @@
-![](images/Screenshot%202023-10-23%20at%205.40.58%E2%80%AFPM.png)
